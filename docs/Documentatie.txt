@@ -1,0 +1,31 @@
+	Aplicația „Monitorizare Depozit” este un proiect realizat în limbajul C++, având la bază principiile programării orientate 
+pe obiecte. Scopul principal al aplicației este simularea unui sistem real de gestiune a stocurilor dintr-un depozit, oferind 
+operații de administrare, analiză și raportare a produselor.
+	Sistemul utilizează structuri de date din STL, în special std::map, pentru organizarea eficientă a produselor în funcție de 
+ID, permițând acces rapid și operații sigure asupra acestora. De asemenea, aplicația citește datele inițiale din fișiere text, 
+ceea ce permite încărcarea dinamică a stocurilor.
+	Aplicația este împărțită în mai multe clase:
+- Clasa Produs reprezintă elementul de bază al aplicației și modelează un obiect din depozit. Aceasta conține atribute esențiale 
+precum:  ID unic;
+		 nume produs;
+		 cantitate disponibilă;
+		 preț;
+		 prag de alertă;
+		 furnizor asociat.
+Clasa include metode de acces (getteri), modificare a cantității, precum și operatori supraîncărcați pentru operațiile de vânzare 
+(-=) și reaprovizionare (+=). Metoda de afișare permite vizualizarea completă a informațiilor despre produs, inclusiv furnizorul 
+asociat.
+- Clasa Furnizor modelează entitatea responsabilă de aprovizionarea produselor. Aceasta conține informații precum ID-ul furnizorului,
+numele și numărul de telefon. Furnizorul este asociat automat fiecărui produs în funcție de categoria din care face parte (IT,
+mobilier, auto sau produse generale), facilitând organizarea logică a stocurilor.
+- Clasa Depozit reprezintă componenta principală a aplicației și are rolul de a gestiona colecția de produse. Aceasta utilizează un 
+std::map pentru organizarea produselor în funcție de ID, asigurând acces rapid și eficient la elemente.
+	Citirea din fiși in care datele inițiale ale aplicației sunt încărcate din fișierul produse.txt, unde fiecare linie descrie un 
+produs.Această abordare permite separarea datelor de logică și facilitează extinderea sistemului fără modificări în codul sursă.
+Funcționalități principale:
+	Aplicația oferă un set complet de operații specifice unui sistem de gestiune a stocurilor:
+		-vânzare și restock produse;
+		-afișarea întregului inventar;
+		-generarea de rapoarte pentru produse sub prag;
+		-recomandări automate pentru reaprovizionare;
+		-sortarea produselor în funcție de cantitatea stocului.

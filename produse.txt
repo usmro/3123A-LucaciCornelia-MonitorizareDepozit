@@ -1,0 +1,500 @@
+1,Laptop ASUS VivoBook,10,4200,2
+2,Laptop Lenovo IdeaPad,15,3900,3
+3,Laptop HP Pavilion,12,4500,2
+4,Mouse Logitech G102,80,120,15
+5,Mouse Redragon Cobra,60,95,10
+6,Tastatura Redragon Kumara,40,250,8
+7,Monitor Samsung 24,20,850,4
+8,Monitor LG UltraWide,10,1500,2
+9,SSD Kingston 1TB,35,450,7
+10,RAM Corsair 16GB,50,320,10
+11,Procesor Intel i5,15,1200,3
+12,Procesor Ryzen 7,10,1700,2
+13,Placa Video RTX 4060,8,2500,2
+14,Sursa Corsair 650W,20,400,4
+15,Router TP-Link,30,250,5
+16,Casti HyperX Cloud,25,350,5
+17,Boxa JBL Flip,18,500,3
+18,Webcam Logitech C920,22,420,4
+19,Imprimanta HP LaserJet,10,950,2
+20,Scanner Canon,8,700,2
+21,Faina 1kg,200,5,40
+22,Zahar 1kg,180,6,35
+23,Ulei 1L,150,9,30
+24,Orez 1kg,120,8,25
+25,Malai 1kg,100,4,20
+26,Paste 500g,130,7,25
+27,Conserva Ton,90,12,15
+28,Lapte 1L,140,8,25
+29,Iaurt Grecesc,110,6,20
+30,Cafea Jacobs 500g,70,28,10
+31,Ceai Verde,60,15,10
+32,Suc Portocale 2L,95,11,18
+33,Apa Plata 2L,250,4,50
+34,Biscuiti Oreo,80,9,15
+35,Ciocolata Milka,100,7,20
+36,Masina Dacia Logan,8,75000,2
+37,Masina Toyota Corolla,5,120000,1
+38,Masina BMW X5,3,450000,1
+39,Anvelope Michelin,40,450,8
+40,Ulei Motor Castrol,70,120,12
+41,Baterie Auto Bosch,25,500,5
+42,Stergatoare Bosch,50,80,10
+43,Jante Aliaj 17,12,1500,2
+44,Compresor Auto,10,350,2
+45,Scaun Birou Ergonomic,20,650,4
+46,Birou Gaming,15,1200,3
+47,Dulap Lemn,10,2000,2
+48,Pat Matrimonial,8,3500,2
+49,Canapea Extensibila,6,4200,1
+50,Masa Bucatarie,14,950,3
+51,Laptop Gaming ASUS TUF,9,5500,2
+52,Laptop Acer Aspire,18,3200,3
+53,Mouse Razer DeathAdder,45,220,8
+54,Tastatura Logitech MX Keys,20,450,4
+55,Monitor Dell 27,16,1200,3
+56,SSD Samsung 2TB,25,800,5
+57,RAM Kingston 32GB,30,650,6
+58,Procesor Intel i7,12,2200,2
+59,Placa Video RTX 4070,6,4200,1
+60,Sursa Seasonic 750W,18,650,3
+61,Router ASUS AX3000,14,550,2
+62,Casti Sony WH1000XM4,10,1400,2
+63,Boxa Sony XB43,15,900,3
+64,Webcam Razer Kiyo,11,600,2
+65,Imprimanta Epson EcoTank,7,1500,1
+66,Scanner HP ScanJet,9,850,2
+67,Faina Integrala 1kg,160,7,30
+68,Zahar Brun 1kg,120,9,25
+69,Ulei Masline 1L,80,35,15
+70,Orez Basmati 1kg,90,14,18
+71,Malai Extra 1kg,110,5,20
+72,Paste Integrale 500g,100,9,20
+73,Conserva Fasole,95,8,18
+74,Lapte Bio 1L,85,12,15
+75,Iaurt Natural,100,7,18
+76,Cafea Lavazza 1kg,40,65,8
+77,Ceai Fructe,70,12,12
+78,Suc Mere 2L,90,10,15
+79,Apa Minerala 2L,220,5,40
+80,Biscuiti Digestive,75,11,12
+81,Ciocolata Lindt,60,15,10
+82,Masina Audi A4,4,210000,1
+83,Masina Mercedes C200,3,260000,1
+84,Anvelope Continental,35,500,7
+85,Ulei Motor Mobil1,65,130,10
+86,Baterie Auto Varta,20,600,4
+87,Stergatoare Valeo,40,90,8
+88,Jante OZ Racing,10,2200,2
+89,Compresor Industrial,5,2500,1
+90,Scaun Gaming RGB,12,950,2
+91,Birou Office,18,850,3
+92,Dulap Metalic,7,1800,1
+93,Pat Single,10,1400,2
+94,Canapea Coltar,4,5500,1
+95,Masa Living,9,1300,2
+96,Laptop MSI Katana,8,6200,2
+97,Laptop Huawei MateBook,14,4800,3
+98,Mouse SteelSeries Rival,35,260,6
+99,Tastatura Corsair K95,15,850,3
+100,Monitor ASUS 32,9,2200,2
+101,SSD WD Black 1TB,22,650,4
+102,RAM GSkill 16GB,28,350,5
+103,Procesor Ryzen 9,6,3200,1
+104,Placa Video RX 7800XT,5,3900,1
+105,Sursa EVGA 850W,10,750,2
+106,Router Xiaomi AX6000,12,500,2
+107,Casti JBL Quantum,18,450,3
+108,Boxa Marshall Stanmore,7,1800,1
+109,Webcam Microsoft HD,16,280,3
+110,Imprimanta Brother HL,11,1200,2
+111,Scanner Epson V39,14,500,2
+112,Faina Alba Premium,190,6,35
+113,Zahar Tos,170,5,30
+114,Ulei Floarea Soarelui,145,10,28
+115,Orez Jasmine 1kg,85,13,15
+116,Malai Superior,130,5,22
+117,Paste Barilla 500g,150,8,25
+118,Conserva Mazare,100,7,18
+119,Lapte UHT 1L,155,7,25
+120,Iaurt Bio,90,9,16
+121,Cafea Tchibo 500g,65,30,12
+122,Ceai Negru,55,14,10
+123,Suc Multifruit 2L,88,12,16
+124,Apa Izvorul Alb 2L,240,4,45
+125,Biscuiti Belvita,78,10,14
+126,Ciocolata Poiana,120,6,20
+127,Masina Ford Focus,6,98000,2
+128,Masina Skoda Octavia,5,115000,1
+129,Anvelope Pirelli,30,550,6
+130,Ulei Motor ELF,60,110,10
+131,Baterie Auto Exide,18,520,3
+132,Stergatoare Denso,38,85,7
+133,Jante BBS 18,8,2600,2
+134,Compresor Aer 50L,9,900,2
+135,Scaun Dining,25,300,5
+136,Birou Lemn Masiv,6,2500,1
+137,Dulap Haine 3 usi,9,3200,2
+138,Pat Copii,11,1700,2
+139,Canapea Moderna,5,4800,1
+140,Masa Dining,7,2100,1
+141,Laptop Apple MacBook Air,7,6500,1
+142,Laptop Dell Inspiron,13,4100,2
+143,Mouse Apple Magic Mouse,20,450,4
+144,Tastatura Apple Magic Keyboard,18,600,3
+145,Monitor BenQ 27,10,1600,2
+146,SSD Crucial 500GB,40,280,8
+147,RAM Patriot 8GB,55,180,10
+148,Procesor Intel i9,4,3800,1
+149,Placa Video GTX 1660,12,1800,2
+150,Sursa Gigabyte 650W,16,420,3
+151,Laptop ASUS ROG Strix,5,7800,1
+152,Laptop Lenovo Legion 5,7,6900,1
+153,Laptop HP Omen,6,7200,1
+154,Laptop Acer Nitro 5,10,5400,2
+155,Mouse Logitech MX Master 3,25,450,5
+156,Mouse ASUS ROG Gladius,20,380,4
+157,Mouse HP Wireless,40,120,8
+158,Tastatura SteelSeries Apex,12,950,2
+159,Tastatura Razer Huntsman,10,1100,2
+160,Tastatura HP Mechanical,18,350,3
+161,Monitor Acer Predator 27,6,2800,1
+162,Monitor Gigabyte Gaming 32,7,2400,1
+163,Monitor Philips Office 24,15,950,3
+164,SSD Samsung 500GB,45,320,8
+165,SSD Adata 1TB,30,420,6
+166,RAM HyperX Fury 16GB,35,390,7
+167,RAM Corsair Dominator 32GB,12,980,2
+168,Procesor Ryzen 5 5600X,16,1250,3
+169,Procesor Intel i3 12100F,22,750,4
+170,Placa Video RTX 3050,14,1700,2
+171,Placa Video RX 6600,11,1600,2
+172,Sursa Thermaltake 700W,14,520,3
+173,Sursa CoolerMaster 750W,10,680,2
+174,Router Huawei AX3,20,300,4
+175,Router Netgear Nighthawk,8,950,1
+176,Casti Logitech G Pro X,16,520,3
+177,Casti Razer Kraken,18,430,3
+178,Boxa Bose SoundLink,10,1200,2
+179,Boxa Harman Kardon,9,1500,1
+180,Webcam Logitech Brio,7,850,1
+181,Imprimanta Canon Pixma,13,750,2
+182,Scanner Fujitsu ScanSnap,5,2200,1
+183,Faina Alba 000 1kg,210,5,40
+184,Faina Neagra 1kg,140,7,28
+185,Zahar Cuburi 1kg,90,10,18
+186,Ulei Rapita 1L,100,11,20
+187,Orez Arborio 1kg,75,18,15
+188,Paste Fusilli 500g,120,9,20
+189,Conserva Rosii,130,6,22
+190,Lapte Fara Lactoza 1L,70,11,12
+191,Iaurt cu Fructe,85,8,15
+192,Cafea Starbucks 500g,30,45,6
+193,Ceai Musetel,60,13,10
+194,Suc Cola 2L,150,9,25
+195,Apa Borsec 2L,260,5,50
+196,Biscuiti Oreo Double,65,11,12
+197,Ciocolata Ritter Sport,70,12,14
+198,Masina Volkswagen Golf,5,110000,1
+199,Masina Kia Sportage,4,145000,1
+200,Masina Tesla Model 3,2,250000,1
+201,Anvelope Goodyear,28,520,5
+202,Ulei Motor Total 5W30,55,115,10
+203,Baterie Auto Tudor,15,480,3
+204,Stergatoare Champion,35,75,6
+205,Jante MAK 18,7,2400,1
+206,Compresor Vertical 100L,4,3200,1
+207,Scaun Dining Premium,14,450,2
+208,Birou Reglabil Electric,8,2800,1
+209,Dulap Sliding Doors,6,4500,1
+210,Pat Tapitat Queen,5,3900,1
+211,Canapea Modulara,3,7200,1
+212,Masa Cafea Moderna,10,850,2
+213,Laptop Samsung Galaxy Book,9,5800,1
+214,Mouse Dell Wireless,30,140,5
+215,Tastatura Microsoft Ergonomic,16,500,3
+216,Monitor MSI Curved 34,4,3500,1
+217,SSD Intel NVMe 2TB,12,980,2
+218,RAM TeamGroup 16GB,24,340,4
+219,Procesor Ryzen 7 7800X3D,5,2600,1
+220,Placa Video RTX 4080,2,7800,1
+221,Sursa ASUS ROG 1000W,6,1250,1
+222,Router D-Link WiFi6,18,350,3
+223,Casti Apple AirPods Max,7,2800,1
+224,Boxa Sony SRS-XB33,12,700,2
+225,Webcam Trust HD,20,180,4
+226,Imprimanta Xerox WorkCentre,6,2400,1
+227,Scanner Brother ADS,5,1700,1
+228,Faina Pizza 1kg,160,8,30
+229,Zahar Pudra 500g,110,7,18
+230,Ulei Porumb 1L,120,10,20
+231,Orez Salbatic 1kg,55,25,10
+232,Paste Penne 500g,140,8,22
+233,Conserva Ciuperci,100,9,18
+234,Lapte de Cocos 1L,45,18,8
+235,Iaurt Proteic,60,10,10
+236,Cafea Illy 250g,25,38,5
+237,Ceai Rooibos,40,16,7
+238,Suc Lamaie 2L,75,12,14
+239,Apa Aqua Carpatica 2L,230,6,45
+240,Biscuiti Petit Beurre,90,8,15
+241,Ciocolata Kinder,110,9,18
+242,Masina Renault Clio,6,87000,1
+243,Masina Hyundai Tucson,4,165000,1
+244,Masina Porsche Cayenne,2,520000,1
+245,Anvelope Hankook,32,470,6
+246,Ulei Motor Liqui Moly,45,160,8
+247,Baterie Auto Moll,10,720,2
+248,Stergatoare Bosch AeroTwin,28,120,5
+249,Jante Rial 19,5,3200,1
+250,Compresor Auto Portabil,14,280,2
+251,Scaun Office Mesh,20,520,4
+252,Birou Minimalist Alb,12,1100,2
+253,Dulap Biblioteca,10,2100,2
+254,Pat Suprapus Copii,6,2600,1
+255,Canapea Chesterfield,2,8900,1
+256,Masa Rotunda Lemn,8,1600,1
+257,Laptop Fujitsu Lifebook,11,4300,2
+258,Mouse Corsair Harpoon,22,180,4
+259,Tastatura Genesis Thor,18,320,3
+260,Monitor ViewSonic 27,10,1450,2
+261,SSD Patriot Burst 1TB,28,390,5
+262,RAM ADATA XPG 32GB,15,780,3
+263,Procesor Intel Xeon,4,4500,1
+264,Placa Video RTX 4090,1,12000,1
+265,Sursa BeQuiet 850W,8,980,1
+266,Router Mercusys AC1200,25,180,5
+267,Casti Bose QC45,9,1700,1
+268,Boxa JBL Charge 5,13,850,2
+269,Webcam Genius FullHD,18,220,3
+270,Imprimanta Samsung Laser,8,980,1
+271,Scanner Kodak Alaris,4,3100,1
+272,Faina Secara 1kg,100,9,18
+273,Zahar Vanilat 100g,150,3,25
+274,Ulei Avocado 500ml,35,42,6
+275,Orez Sushi 1kg,50,20,10
+276,Paste Spaghetti 1kg,90,12,15
+277,Conserva Porumb,110,7,18
+278,Lapte Migdale 1L,55,15,10
+279,Iaurt Vegan,40,12,8
+280,Cafea Segafredo 500g,35,32,6
+281,Ceai Verde Matcha,20,55,4
+282,Suc Ananas 2L,70,13,12
+283,Apa Evian 1.5L,90,14,15
+284,Biscuiti Lotus,50,14,8
+285,Ciocolata Ferrero,45,18,8
+286,Masina Opel Astra,5,93000,1
+287,Masina Nissan Qashqai,3,158000,1
+288,Masina Lexus RX,2,390000,1
+289,Anvelope Bridgestone,24,620,4
+290,Ulei Motor Shell Helix,50,125,9
+291,Baterie Auto Banner,14,580,2
+292,Stergatoare Alca,32,60,6
+293,Jante Dezent 17,9,1700,2
+294,Compresor Aer Industrial,3,5400,1
+295,Scaun Piele Executive,7,1450,1
+296,Birou Colt Gaming,5,1900,1
+297,Dulap Pantofi,11,980,2
+298,Pat King Size,4,5800,1
+299,Canapea Scandinavă,3,6400,1
+300,Masa Extensibila,6,2700,1
+301,Laptop Alienware M16,4,9800,1
+302,Laptop ASUS ZenBook,12,5600,2
+303,Laptop Lenovo ThinkPad X1,8,7200,1
+304,Laptop Acer Swift 3,16,4100,3
+305,Mouse Logitech Pebble,50,90,10
+306,Mouse MSI Clutch,18,240,3
+307,Mouse Wireless Dell,35,130,6
+308,Tastatura ASUS TUF K3,14,650,2
+309,Tastatura Logitech G915,6,1350,1
+310,Tastatura Dell Office,28,180,5
+311,Monitor Samsung Odyssey G7,5,3200,1
+312,Monitor LG 4K 32,7,2900,1
+313,Monitor AOC Gaming 27,10,1700,2
+314,SSD Lexar 1TB,22,410,4
+315,SSD Samsung EVO 1TB,18,620,3
+316,RAM Corsair Vengeance 16GB,30,420,5
+317,RAM Kingston Fury 8GB,40,210,7
+318,Procesor Intel Pentium Gold,25,450,5
+319,Procesor Ryzen 3 4100,18,650,3
+320,Placa Video GTX 1650,16,1400,3
+321,Placa Video RTX 3060 Ti,9,2800,1
+322,Sursa Deepcool 650W,14,380,2
+323,Sursa Sharkoon 750W,12,540,2
+324,Router TP-Link Archer C6,20,280,4
+325,Router ASUS Gaming AX5400,5,980,1
+326,Casti SteelSeries Arctis 7,10,850,2
+327,Casti Sony Pulse 3D,14,520,2
+328,Boxa Ultimate Ears Boom,11,760,2
+329,Boxa JBL PartyBox,4,2400,1
+330,Webcam ASUS Webcam C3,13,390,2
+331,Imprimanta Canon MegaTank,7,1800,1
+332,Scanner Epson Workforce,5,2100,1
+333,Faina Alba 650 1kg,180,6,35
+334,Faina de Porumb 1kg,120,5,20
+335,Zahar Tos Premium,160,6,30
+336,Ulei de Palmier 1L,90,12,18
+337,Orez Brun 1kg,75,16,15
+338,Paste Tagliatelle 500g,95,11,18
+339,Conserva Sardine,85,10,15
+340,Lapte Capra 1L,50,18,10
+341,Iaurt Activia,100,8,18
+342,Cafea Nescafe Gold,45,35,8
+343,Ceai English Breakfast,60,14,10
+344,Suc Rodie 2L,55,18,10
+345,Apa Dorna 2L,210,5,40
+346,Biscuiti Tuc,90,8,15
+347,Ciocolata Toblerone,40,20,7
+348,Masina Peugeot 208,4,99000,1
+349,Masina Volvo XC60,2,310000,1
+350,Masina Range Rover Evoque,2,420000,1
+351,Anvelope Dunlop,20,570,4
+352,Ulei Motor Motul 5W40,40,150,7
+353,Baterie Auto Rocket,12,450,2
+354,Stergatoare Trico,28,70,5
+355,Jante Sparco 18,6,2900,1
+356,Compresor Stanley 50L,8,1200,1
+357,Scaun Gaming DXRacer,5,2200,1
+358,Birou Reglabil Negru,7,2400,1
+359,Dulap Vintage Lemn,4,5200,1
+360,Pat Boxspring,3,7600,1
+361,Canapea Reclinabila,2,9800,1
+362,Masa Marmura Dining,4,4800,1
+363,Laptop Toshiba Dynabook,9,3900,1
+364,Mouse Lenovo Legion,20,210,4
+365,Tastatura HyperX Alloy,15,720,2
+366,Monitor Dell UltraSharp 27,6,3400,1
+367,SSD PNY 500GB,25,260,5
+368,RAM Crucial 16GB,32,300,6
+369,Procesor AMD Athlon,20,350,4
+370,Procesor Intel Xeon Gold,3,7800,1
+371,Placa Video RTX A2000,5,5200,1
+372,Sursa NZXT 850W,8,920,1
+373,Router Cisco Business,4,1800,1
+374,Casti AKG Studio,9,950,1
+375,Boxa Sonos One,7,1400,1
+376,Webcam Elgato Facecam,6,980,1
+377,Imprimanta Ricoh Office,3,5600,1
+378,Scanner Plustek OpticFilm,4,2900,1
+379,Faina Grau Dur 1kg,110,8,20
+380,Zahar Cane Sugar 1kg,95,11,18
+381,Ulei Susan 500ml,40,28,7
+382,Orez Integral 1kg,60,17,12
+383,Paste Ravioli 500g,80,14,15
+384,Conserva Mazare Verde,90,6,15
+385,Lapte Soia 1L,65,13,12
+386,Iaurt Skyr,70,11,12
+387,Cafea Davidoff 500g,35,42,6
+388,Ceai Earl Grey,50,16,9
+389,Suc Mango 2L,45,19,8
+390,Apa Fiji 1L,70,18,12
+391,Biscuiti Oreo Mini,75,10,12
+392,Ciocolata Merci,55,17,10
+393,Masina Seat Leon,4,105000,1
+394,Masina Subaru Forester,3,185000,1
+395,Masina Jaguar XF,2,370000,1
+396,Anvelope Yokohama,18,590,3
+397,Ulei Motor Ravenol,30,170,5
+398,Baterie Auto Bosch AGM,8,980,1
+399,Stergatoare Hella,22,95,4
+400,Jante MOMO 19,5,3500,1
+401,Compresor Michelin 100L,3,4200,1
+402,Scaun Ergonomic Premium,6,1800,1
+403,Birou Gaming Carbon,5,2600,1
+404,Dulap Modular Alb,7,3100,1
+405,Pat Futon Japonez,4,3400,1
+406,Canapea Velvet Lux,2,8700,1
+407,Masa Stejar Masiv,5,3900,1
+408,Laptop Chuwi CoreBook,12,2900,2
+409,Mouse Rapoo Wireless,28,110,5
+410,Tastatura Logitech K380,25,250,5
+411,Monitor Huawei MateView,6,3100,1
+412,SSD Silicon Power 1TB,20,390,4
+413,RAM Samsung DDR4 8GB,40,190,8
+414,Procesor Intel Celeron,30,280,6
+415,Procesor Ryzen Threadripper,2,9500,1
+416,Placa Video RTX 4070 Ti,4,6200,1
+417,Sursa Fractal Design 850W,7,980,1
+418,Router Tenda AC23,18,260,3
+419,Casti Sennheiser HD560S,8,1250,1
+420,Boxa Bang Olufsen,3,4200,1
+421,Webcam HP FullHD,15,260,3
+422,Imprimanta Zebra Label,5,1800,1
+423,Scanner Canon LiDE400,8,750,1
+424,Faina Bio Integrala 1kg,90,12,16
+425,Zahar Brun Bio 1kg,80,13,15
+426,Ulei Cocos 500ml,55,26,10
+427,Orez Rosu 1kg,40,24,8
+428,Paste Tortellini 500g,70,16,12
+429,Conserva Naut,95,8,15
+430,Lapte Orez 1L,50,15,8
+431,Iaurt Grecesc Protein,60,12,10
+432,Cafea Pellini 500g,30,48,5
+433,Ceai Detox,45,20,8
+434,Suc Kiwi 2L,35,22,6
+435,Apa Perrier 1L,65,20,10
+436,Biscuiti Leibniz,50,13,8
+437,Ciocolata Godiva,25,35,5
+438,Masina Citroen C3,5,92000,1
+439,Masina Mazda CX5,3,210000,1
+440,Masina Bentley Bentayga,1,950000,1
+441,Anvelope Falken,16,530,3
+442,Ulei Motor Aral 5W30,25,145,4
+443,Baterie Auto Yuasa,10,690,2
+444,Stergatoare SWF,20,88,4
+445,Jante Enkei 18,6,3100,1
+446,Compresor DeWalt 50L,4,3600,1
+447,Scaun Mesh Office,12,780,2
+448,Birou Scandinavian,7,1700,1
+449,Dulap MDF Modern,6,2800,1
+450,Pat Rabatabil,3,6100,1
+451,Canapea U Shape,2,10500,1
+452,Masa Industriala,5,3300,1
+453,Laptop Vaio SX14,6,6700,1
+454,Mouse HP Gaming M260,18,170,3
+455,Tastatura MSI Vigor GK50,10,690,2
+456,Monitor Lenovo Legion 32,5,3600,1
+457,SSD TeamGroup MP34 1TB,18,520,3
+458,RAM Lexar 16GB DDR5,14,650,2
+459,Procesor Intel i7 14700K,5,2800,1
+460,Procesor Ryzen 9 7950X,3,4200,1
+461,Placa Video RX 7900 XTX,3,7100,1
+462,Sursa SilverStone 1000W,5,1450,1
+463,Router ASUS ZenWiFi,6,1300,1
+464,Casti Beyerdynamic DT770,7,980,1
+465,Boxa LG XBoom,10,650,2
+466,Webcam AverMedia LiveCam,9,520,1
+467,Imprimanta Lexmark Office,4,3200,1
+468,Scanner Iriscan Desk,6,1400,1
+469,Faina Hrisca 1kg,70,15,12
+470,Zahar Coconut Sugar 500g,40,18,7
+471,Ulei Samburi Struguri 500ml,30,34,5
+472,Orez Negru 1kg,35,28,6
+473,Paste Lasagna 500g,75,13,12
+474,Conserva Mix Legume,85,9,14
+475,Lapte Ovaz 1L,45,16,8
+476,Iaurt Bio Fructe,55,10,9
+477,Cafea Kimbo 500g,28,36,5
+478,Ceai Ghimbir Lamaie,50,15,9
+479,Suc Fructe Padure 2L,40,21,7
+480,Apa San Pellegrino 1L,55,19,9
+481,Biscuiti Nutella BReady,45,14,7
+482,Ciocolata Milka Oreo,70,11,12
+483,Masina Suzuki Vitara,4,118000,1
+484,Masina Alfa Romeo Giulia,2,290000,1
+485,Masina Maserati Levante,1,680000,1
+486,Anvelope Nexen,20,410,4
+487,Ulei Motor Petronas,35,132,6
+488,Baterie Auto Fiamm,12,510,2
+489,Stergatoare Bosch Twin,18,92,3
+490,Jante ATS 17,8,1900,1
+491,Compresor Makita 24L,7,980,1
+492,Scaun Gaming Fabric,8,1250,1
+493,Birou Alb Minimalist,10,980,2
+494,Dulap Dressing Mare,4,5400,1
+495,Pat Lemn Natur,6,2900,1
+496,Canapea Convertible,3,5600,1
+497,Masa TV Moderna,9,1450,1
+498,Laptop LG Gram,7,7300,1
+499,Mouse Roccat Burst Pro,16,240,3
+500,Tastatura Redragon Shiva,20,280,4
