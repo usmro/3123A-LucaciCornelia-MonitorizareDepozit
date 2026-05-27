@@ -1,6 +1,8 @@
 #include "Depozit.h"
 #include <iostream>
 #include <stdexcept>
+#include <vector>
+#include <algorithm>
 
 void Depozit::adaugaProdus(const Produs& produs) {
 
@@ -47,11 +49,22 @@ void Depozit::afiseazaToateProdusele() const {
 
 void Depozit::raportProduseSubPrag() const {
 
+    bool exista = false;
+
     for (const auto& pair : produse) {
 
-        if (pair.second.getCantitate() < pair.second.getPragAlerta()) {
-            pair.second.afiseaza();
+        const Produs& produs = pair.second;
+
+        if (produs.getCantitate() <= produs.getPragAlerta()) {
+
+            exista = true;
+
+            produs.afiseaza();
         }
+    }
+
+    if (!exista) {
+        std::cout << "Nu exista produse sub prag.\n";
     }
 }
 
@@ -64,4 +77,61 @@ Produs Depozit::getProdus(int id) const {
     }
 
     return it->second;
+}
+
+void Depozit::produsePentruRecomanda() const {
+
+    std::vector<Produs> recomandari;
+
+    for (const auto& pair : produse) {
+
+        const Produs& produs = pair.second;
+
+        if (produs.getCantitate() <= produs.getPragAlerta()) {
+            recomandari.push_back(produs);
+        }
+    }
+
+    std::sort(recomandari.begin(), recomandari.end(),
+        [](const Produs& a, const Produs& b) {
+
+            int deficitA = a.getPragAlerta() - a.getCantitate();
+            int deficitB = b.getPragAlerta() - b.getCantitate();
+
+            return deficitA > deficitB;
+        });
+
+    std::cout << "\n<<< Produse recomandate pentru RE-COMANDA >>>\n";
+
+    if (recomandari.empty()) {
+
+        std::cout << "Nu exista produse care necesita reaprovizionare.\n";
+        return;
+    }
+
+    for (const auto& produs : recomandari) {
+
+        produs.afiseaza();
+    }
+}
+
+void Depozit::afiseazaProduseSortateCantitate() const {
+
+    std::vector<Produs> listaProduse;
+
+    for (const auto& pair : produse) {
+        listaProduse.push_back(pair.second);
+    }
+
+    std::sort(listaProduse.begin(), listaProduse.end(),
+        [](const Produs& a, const Produs& b) {
+
+            return a.getCantitate() < b.getCantitate();
+        });
+
+    std::cout << "\n<<< Produse sortate dupa cantitate >>>\n";
+
+    for (const auto& produs : listaProduse) {
+        produs.afiseaza();
+    }
 }

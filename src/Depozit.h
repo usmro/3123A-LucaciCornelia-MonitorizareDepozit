@@ -20,6 +20,9 @@ public:
     void raportProduseSubPrag() const;
 
     Produs getProdus(int id) const;
+
+    void produsePentruRecomanda() const;
+    void afiseazaProduseSortateCantitate() const;
 };
 
 #endif

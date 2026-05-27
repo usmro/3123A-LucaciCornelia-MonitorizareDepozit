@@ -61,35 +61,46 @@ void citesteProduseDinFisier(const std::string& numeFisier, Depozit& depozit) {
 
     while (getline(fisier, linie)) {
 
-        std::stringstream ss(linie);
+        if (linie.empty()) {
+            continue;
+        }
 
-        std::string token;
+        try {
 
-        int id;
-        std::string nume;
-        int cantitate;
-        double pret;
-        int prag;
+            std::stringstream ss(linie);
 
-        getline(ss, token, ',');
-        id = stoi(token);
+            std::string token;
 
-        getline(ss, nume, ',');
+            int id;
+            std::string nume;
+            int cantitate;
+            double pret;
+            int prag;
 
-        getline(ss, token, ',');
-        cantitate = stoi(token);
+            getline(ss, token, ',');
+            id = stoi(token);
 
-        getline(ss, token, ',');
-        pret = stod(token);
+            getline(ss, nume, ',');
 
-        getline(ss, token, ',');
-        prag = stoi(token);
+            getline(ss, token, ',');
+            cantitate = stoi(token);
 
-        Furnizor furnizor = getFurnizorPentruProdus(nume);
+            getline(ss, token, ',');
+            pret = stod(token);
 
-        Produs produs(id, nume, cantitate, pret, prag, furnizor);
+            getline(ss, token, ',');
+            prag = stoi(token);
 
-        depozit.adaugaProdus(produs);
+            Furnizor furnizor = getFurnizorPentruProdus(nume);
+
+            Produs produs(id, nume, cantitate, pret, prag, furnizor);
+
+            depozit.adaugaProdus(produs);
+        }
+        catch (...) {
+
+            std::cout << "Linie invalida: " << linie << std::endl;
+        }
     }
 
     fisier.close();
@@ -106,7 +117,7 @@ int main() {
         std::cout << "\n<<< TOATE PRODUSELE >>>\n";
         depozit.afiseazaToateProdusele();
 
-        std::cout << "\n<<< VANZARI >>>\n";
+        std::cout << "\n<<< Vanzari >>>\n";
 
         int id1 = 10;
         int cant1 = 45;
@@ -145,7 +156,7 @@ int main() {
 
         Produs produsRestock = depozit.getProdus(idRestock);
 
-        std::cout << "\n<<< RESTOCK PRODUS >>>\n";
+        std::cout << "\n<<< Restock produs >>>\n";
 
         std::cout << "ID: "
             << produsRestock.getId()
@@ -166,6 +177,12 @@ int main() {
         std::cout << "\n<<< Produse sub prag >>>\n";
 
         depozit.raportProduseSubPrag();
+
+        //re-comanda
+        depozit.produsePentruRecomanda();
+
+        //sortare dupa cantitate
+        depozit.afiseazaProduseSortateCantitate();
 
     }
     catch (const std::exception& e) {

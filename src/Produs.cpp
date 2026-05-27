@@ -49,14 +49,13 @@ Produs& Produs::operator-=(int valoare) {
 }
 
 void Produs::afiseaza() const {
+
     std::cout << "ID: " << id
         << " | Nume: " << nume
         << " | Cantitate: " << cantitate
         << " | Pret: " << pret
         << " | Prag alerta: " << pragAlerta
-        << " | ";
-
-    furnizor.afiseaza();
-
-    std::cout << std::endl;
+        << " | Furnizor: " << furnizor.getNume()
+        << " | Tel: " << furnizor.getTelefon()
+        << std::endl;
 }
