@@ -1,12 +1,13 @@
 #ifndef DEPOZIT_H
 #define DEPOZIT_H
 
-#include <unordered_map>
+#include <map>
 #include "Produs.h"
 
 class Depozit {
+
 private:
-    std::unordered_map<int, Produs> produse;
+    std::map<int, Produs> produse;
 
 public:
     void adaugaProdus(const Produs& produs);
@@ -17,6 +18,8 @@ public:
 
     void afiseazaToateProdusele() const;
     void raportProduseSubPrag() const;
+
+    Produs getProdus(int id) const;
 };
 
 #endif

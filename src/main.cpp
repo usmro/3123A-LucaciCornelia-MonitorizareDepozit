@@ -1,5 +1,52 @@
 #include <iostream>
+#include <fstream>
+#include <sstream>
+
 #include "Depozit.h"
+
+void citesteProduseDinFisier(const std::string& numeFisier, Depozit& depozit) {
+
+    std::ifstream fisier(numeFisier);
+
+    if (!fisier) {
+        throw std::runtime_error("Fisierul nu a putut fi deschis!");
+    }
+
+    std::string linie;
+
+    while (getline(fisier, linie)) {
+
+        std::stringstream ss(linie);
+
+        std::string token;
+
+        int id;
+        std::string nume;
+        int cantitate;
+        double pret;
+        int prag;
+
+        getline(ss, token, ',');
+        id = stoi(token);
+
+        getline(ss, nume, ',');
+
+        getline(ss, token, ',');
+        cantitate = stoi(token);
+
+        getline(ss, token, ',');
+        pret = stod(token);
+
+        getline(ss, token, ',');
+        prag = stoi(token);
+
+        Produs produs(id, nume, cantitate, pret, prag);
+
+        depozit.adaugaProdus(produs);
+    }
+
+    fisier.close();
+}
 
 int main() {
 
@@ -7,36 +54,64 @@ int main() {
 
     try {
 
-        Produs p1(1, "Laptop", 10, 3500.50, 3);
-        Produs p2(2, "Mouse", 5, 120.99, 2);
-        Produs p3(3, "Tastatura", 2, 250.00, 4);
+        citesteProduseDinFisier("produse.txt", depozit);
 
-        depozit.adaugaProdus(p1);
-        depozit.adaugaProdus(p2);
-        depozit.adaugaProdus(p3);
-
-        std::cout << "Produse initiale:\n";
+        std::cout << "\nTOATE PRODUSELE:\n";
         depozit.afiseazaToateProdusele();
 
-        std::cout << "\nVanzare 3 mouse:\n";
-        depozit.vindeProdus(2, 3);
+        int idVanzare = 10;
+        int cantitateVanduta = 45;
 
-        std::cout << "\nRestock tastatura:\n";
-        depozit.restockProdus(3, 10);
+        Produs produsVandut = depozit.getProdus(idVanzare);
 
-        std::cout << "\nProduse actualizate:\n";
-        depozit.afiseazaToateProdusele();
+        std::cout << "\nVANZARE PRODUS\n";
+
+        std::cout << "ID: "
+            << produsVandut.getId()
+            << " | Nume: "
+            << produsVandut.getNume()
+            << " | Cantitate vanduta: "
+            << cantitateVanduta
+            << std::endl;
+
+        depozit.vindeProdus(idVanzare, cantitateVanduta);
+
+        Produs produsActualizat = depozit.getProdus(idVanzare);
+
+        std::cout << "Stoc ramas: "
+            << produsActualizat.getCantitate()
+            << std::endl;
+
+        int idRestock = 465;
+        int cantitateAdaugata = 20;
+
+        Produs produsRestock = depozit.getProdus(idRestock);
+
+        std::cout << "\nRESTOCK PRODUS\n";
+
+        std::cout << "ID: "
+            << produsRestock.getId()
+            << " | Nume: "
+            << produsRestock.getNume()
+            << " | Cantitate adaugata: "
+            << cantitateAdaugata
+            << std::endl;
+
+        depozit.restockProdus(idRestock, cantitateAdaugata);
+
+        Produs produsNou = depozit.getProdus(idRestock);
+
+        std::cout << "Stoc nou: "
+            << produsNou.getCantitate()
+            << std::endl;
+
+        std::cout << "\nProduse sub prag:\n";
 
         depozit.raportProduseSubPrag();
 
-        std::cout << "\nStergere produs ID 1\n";
-        depozit.eliminaProdus(1);
-
-        std::cout << "\nProduse finale:\n";
-        depozit.afiseazaToateProdusele();
-
     }
     catch (const std::exception& e) {
+
         std::cout << "Eroare: " << e.what() << std::endl;
     }
 

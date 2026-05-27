@@ -47,12 +47,21 @@ void Depozit::afiseazaToateProdusele() const {
 
 void Depozit::raportProduseSubPrag() const {
 
-    std::cout << "\nProduse sub prag:\n";
-
     for (const auto& pair : produse) {
 
         if (pair.second.getCantitate() < pair.second.getPragAlerta()) {
             pair.second.afiseaza();
         }
     }
+}
+
+Produs Depozit::getProdus(int id) const {
+
+    auto it = produse.find(id);
+
+    if (it == produse.end()) {
+        throw std::runtime_error("Produs inexistent!");
+    }
+
+    return it->second;
 }
