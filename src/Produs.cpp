@@ -2,8 +2,8 @@
 
 Produs::Produs() : id(0), nume(""), cantitate(0), pret(0), pragAlerta(0) {}
 
-Produs::Produs(int id, std::string nume, int cantitate, double pret, int pragAlerta)
-    : id(id), nume(nume), cantitate(cantitate), pret(pret), pragAlerta(pragAlerta) {
+Produs::Produs(int id, std::string nume, int cantitate, double pret, int pragAlerta, Furnizor furnizor)
+    : id(id), nume(nume), cantitate(cantitate), pret(pret), pragAlerta(pragAlerta), furnizor(furnizor) {
 }
 
 int Produs::getId() const {
@@ -24,6 +24,10 @@ double Produs::getPret() const {
 
 int Produs::getPragAlerta() const {
     return pragAlerta;
+}
+
+Furnizor Produs::getFurnizor() const {
+    return furnizor;
 }
 
 void Produs::setCantitate(int cantitate) {
@@ -50,5 +54,9 @@ void Produs::afiseaza() const {
         << " | Cantitate: " << cantitate
         << " | Pret: " << pret
         << " | Prag alerta: " << pragAlerta
-        << std::endl;
+        << " | ";
+
+    furnizor.afiseaza();
+
+    std::cout << std::endl;
 }

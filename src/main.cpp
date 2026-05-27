@@ -1,8 +1,53 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <algorithm>
+#include <cctype>
 
 #include "Depozit.h"
+
+Furnizor getFurnizorPentruProdus(const std::string& numeProdus) {
+
+    std::string lower = numeProdus;
+
+    std::transform(lower.begin(), lower.end(), lower.begin(),
+        [](unsigned char c) { return std::tolower(c); });
+
+    if (lower.find("laptop") != std::string::npos ||
+        lower.find("mouse") != std::string::npos ||
+        lower.find("monitor") != std::string::npos ||
+        lower.find("tastatura") != std::string::npos ||
+        lower.find("procesor") != std::string::npos ||
+        lower.find("ssd") != std::string::npos ||
+        lower.find("ram") != std::string::npos ||
+        lower.find("router") != std::string::npos) {
+
+        return Furnizor(1, "Altex", "0722000001");
+    }
+
+    if (lower.find("masa") != std::string::npos ||
+        lower.find("scaun") != std::string::npos ||
+        lower.find("pat") != std::string::npos ||
+        lower.find("dulap") != std::string::npos ||
+        lower.find("canapea") != std::string::npos ||
+        lower.find("birou") != std::string::npos) {
+
+        return Furnizor(2, "Dedeman", "0722000002");
+    }
+
+    if (lower.find("masina") != std::string::npos ||
+        lower.find("anvelope") != std::string::npos ||
+        lower.find("ulei") != std::string::npos ||
+        lower.find("baterie") != std::string::npos ||
+        lower.find("jante") != std::string::npos ||
+        lower.find("compresor") != std::string::npos ||
+        lower.find("motor") != std::string::npos) {
+
+        return Furnizor(3, "Select Auto", "0722000003");
+    }
+
+    return Furnizor(4, "Metro Cash & Carry", "0722000004");
+}
 
 void citesteProduseDinFisier(const std::string& numeFisier, Depozit& depozit) {
 
@@ -40,7 +85,9 @@ void citesteProduseDinFisier(const std::string& numeFisier, Depozit& depozit) {
         getline(ss, token, ',');
         prag = stoi(token);
 
-        Produs produs(id, nume, cantitate, pret, prag);
+        Furnizor furnizor = getFurnizorPentruProdus(nume);
+
+        Produs produs(id, nume, cantitate, pret, prag, furnizor);
 
         depozit.adaugaProdus(produs);
     }
@@ -56,38 +103,49 @@ int main() {
 
         citesteProduseDinFisier("produse.txt", depozit);
 
-        std::cout << "\nTOATE PRODUSELE:\n";
+        std::cout << "\n<<< TOATE PRODUSELE >>>\n";
         depozit.afiseazaToateProdusele();
 
-        int idVanzare = 10;
-        int cantitateVanduta = 45;
+        std::cout << "\n<<< VANZARI >>>\n";
 
-        Produs produsVandut = depozit.getProdus(idVanzare);
+        int id1 = 10;
+        int cant1 = 45;
 
-        std::cout << "\nVANZARE PRODUS\n";
+        Produs p1 = depozit.getProdus(id1);
 
-        std::cout << "ID: "
-            << produsVandut.getId()
-            << " | Nume: "
-            << produsVandut.getNume()
-            << " | Cantitate vanduta: "
-            << cantitateVanduta
+        std::cout << "ID: " << p1.getId()
+            << " | Nume: " << p1.getNume()
+            << " | Cantitate vanduta: " << cant1
             << std::endl;
 
-        depozit.vindeProdus(idVanzare, cantitateVanduta);
-
-        Produs produsActualizat = depozit.getProdus(idVanzare);
+        depozit.vindeProdus(id1, cant1);
 
         std::cout << "Stoc ramas: "
-            << produsActualizat.getCantitate()
+            << depozit.getProdus(id1).getCantitate()
+            << "\n\n";
+
+        int id2 = 145;
+        int cant2 = 5;
+
+        Produs p2 = depozit.getProdus(id2);
+
+        std::cout << "ID: " << p2.getId()
+            << " | Nume: " << p2.getNume()
+            << " | Cantitate vanduta: " << cant2
             << std::endl;
+
+        depozit.vindeProdus(id2, cant2);
+
+        std::cout << "Stoc ramas: "
+            << depozit.getProdus(id2).getCantitate()
+            << "\n\n";
 
         int idRestock = 465;
         int cantitateAdaugata = 20;
 
         Produs produsRestock = depozit.getProdus(idRestock);
 
-        std::cout << "\nRESTOCK PRODUS\n";
+        std::cout << "\n<<< RESTOCK PRODUS >>>\n";
 
         std::cout << "ID: "
             << produsRestock.getId()
@@ -105,7 +163,7 @@ int main() {
             << produsNou.getCantitate()
             << std::endl;
 
-        std::cout << "\nProduse sub prag:\n";
+        std::cout << "\n<<< Produse sub prag >>>\n";
 
         depozit.raportProduseSubPrag();
 
@@ -116,4 +174,5 @@ int main() {
     }
 
     return 0;
+
 }

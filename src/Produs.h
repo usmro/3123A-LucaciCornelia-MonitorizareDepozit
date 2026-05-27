@@ -5,6 +5,8 @@
 #include <string>
 #include <iostream>
 
+#include "Furnizor.h"
+
 class Produs {
 private:
     int id;
@@ -12,10 +14,11 @@ private:
     int cantitate;
     double pret;
     int pragAlerta;
+    Furnizor furnizor;
 
 public:
     Produs();
-    Produs(int id, std::string nume, int cantitate, double pret, int pragAlerta);
+    Produs(int id, std::string nume, int cantitate, double pret, int pragAlerta, Furnizor furnizor);
 
     // Getteri
     int getId() const;
@@ -23,6 +26,7 @@ public:
     int getCantitate() const;
     double getPret() const;
     int getPragAlerta() const;
+    Furnizor getFurnizor() const;
 
     // Setteri
     void setCantitate(int cantitate);
@@ -33,6 +37,7 @@ public:
 
     // Afisare
     void afiseaza() const;
+
 };
 
 #endif
